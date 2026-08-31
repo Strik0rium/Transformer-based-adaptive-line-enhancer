@@ -109,6 +109,44 @@ enhanced_valid = enhanced[result.valid_slice]
 谱线更清晰并不自动等价于目标波形、检测概率或方位信息均得到改善，这些指标需要在后续
 实验中分别验证。
 
+## 可视化谱线增强效果
+
+```python
+import matplotlib.pyplot as plt
+
+from transformer_based_adaptive_line_enhancer import (
+    adaptive_line_enhance,
+    generate_noisy_signal,
+    plot_line_enhancement_spectrogram,
+)
+
+sample = generate_noisy_signal(
+    sample_rate_hz=1_000.0,
+    snr_db=-10.0,
+    seed=42,
+    scaling="power-normalized",
+)
+result = adaptive_line_enhance(sample.noisy_signal)
+
+figure, axes = plot_line_enhancement_spectrogram(
+    sample,
+    result.enhanced_signal,
+    sample_rate_hz=1_000.0,
+    start_sample=result.adaptation_start,
+    n_fft=256,
+    hop_length=64,
+    max_frequency_hz=250.0,
+    dynamic_range_db=80.0,
+)
+
+figure.savefig("ale-spectrogram.png", dpi=150)
+plt.show()
+```
+
+三幅时频图分别显示干净参考、带噪输入和增强输出。它们共享同一个绝对 dB 色标，
+因此不会因各自归一化而夸大增强效果。`start_sample=result.adaptation_start` 会排除
+ALE 尚未取得完整延迟输入向量的启动区间。
+
 ## 测试
 
 ```bash
