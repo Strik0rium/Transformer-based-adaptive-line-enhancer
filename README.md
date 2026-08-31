@@ -39,6 +39,27 @@ noisy = sample.noisy_signal
 NumPy 和 MATLAB 的随机数流不同，所以 Python 端在公式和计算顺序上保持一致，
 但不会在相同 seed 下生成逐样点相同的 `randn` 序列。
 
+## 可视化带噪信号
+
+```python
+import matplotlib.pyplot as plt
+
+from transformer_based_adaptive_line_enhancer import (
+    generate_noisy_signal,
+    plot_noisy_signal_components,
+)
+
+sample = generate_noisy_signal(seed=42)
+figure, axes = plot_noisy_signal_components(sample)
+
+figure.savefig("noisy-signal-components.png", dpi=150)
+plt.show()
+```
+
+该方法在三个独立子图中依次绘制 `clean_signal`、`noise` 和 `noisy_signal`。
+函数本身不会显示窗口或写入文件，而是返回 Matplotlib 的 `Figure` 和三个 `Axes`，
+由调用者决定继续调整、保存或显示。
+
 ## Delayed Adaptive Line Enhancement
 
 从 ALE 阶段开始，本项目采用独立设计，不再复刻 MATLAB 实现。ALE 将当前带噪样本
