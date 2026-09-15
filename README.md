@@ -109,6 +109,99 @@ enhanced_valid = enhanced[result.valid_slice]
 谱线更清晰并不自动等价于目标波形、检测概率或方位信息均得到改善，这些指标需要在后续
 实验中分别验证。
 
+## Autoencoder Deep Line Enhancement
+
+AE-DLE 采用论文第 3.1 节的核心思想，但代码完全独立实现：从同一段带噪观测构造
+“延迟帧 → 当前帧”训练对，通过瓶颈自编码器学习跨延迟仍可预测的窄带成分。训练 API
+不接收干净标签；`clean_signal` 只用于受控实验中的外部评价。
+
+```python
+from transformer_based_adaptive_line_enhancer import (
+    AEDLEConfig,
+    enhance_with_ae_dle,
+    train_ae_dle,
+)
+
+config = AEDLEConfig(
+    frame_length=256,
+    frame_hop=64,
+    prediction_delay=1_000,  # 采样率为 1 kHz 时对应论文实验中的 1 s 延迟
+    hidden_dim=128,
+    bottleneck_dim=32,
+    learning_rate=1e-3,
+    batch_size=32,
+    epochs=30,
+    seed=0,
+)
+
+training = train_ae_dle(sample.noisy_signal, config=config)
+result = enhance_with_ae_dle(sample.noisy_signal, training)
+
+enhanced = result.enhanced_signal
+residual = result.residual
+enhanced_valid = enhanced[result.valid_slice]
+loss_history = training.loss_history
+```
+
+实现使用两层 ReLU 编码器、对称解码器、MSE 损失和 Adam。论文报告学习率 0.01，
+但没有完整给出优化器与软件细节；本实现独立选择更保守的 Adam 学习率 0.001。
+推理时，每个输入帧预测其 `prediction_delay` 样本后的帧，再按目标时间位置重叠平均，
+因此输出与原始时间轴对齐。超出训练最小-最大范围的推理输入会裁剪至训练归一化区间。
+
+固定种子的单谱线白噪声试验验证了明显 SNR 增益，但这不是普遍性能保证。多谱线中，
+瓶颈自编码器可能保留强谱线而压制弱谱线；必须逐谱线报告结果，不能只看总输出 SNR。
+
+## Autoencoder-Transformer Deep Line Enhancement
+
+AET-DLE 按论文第 3.2 节重新独立实现，没有读取或复用其他 AET-DLE 代码。模型先对
+每个重叠矩形窗帧进行两层 ReLU 编码，再让 Transformer Encoder 在连续帧序列之间
+执行注意力，最后逐帧解码。训练目标是用当前观测帧序列预测同一观测的延迟版本，
+不使用干净信号或目标频率标签。
+
+```python
+from transformer_based_adaptive_line_enhancer import (
+    AETDLEConfig,
+    enhance_with_aet_dle,
+    train_aet_dle,
+)
+
+config = AETDLEConfig(
+    frame_length=320,
+    frame_hop=64,
+    prediction_delay=1_000,
+    sequence_length=8,
+    embedding_dim=64,
+    attention_heads=8,
+    transformer_layers=2,
+    feedforward_dim=128,
+    learning_rate=1e-3,
+    epochs=30,
+    seed=0,
+)
+
+training = train_aet_dle(sample.noisy_signal, config=config)
+result = enhance_with_aet_dle(sample.noisy_signal, training)
+
+enhanced = result.enhanced_signal
+enhanced_valid = enhanced[result.valid_slice]
+```
+
+默认 `frame_length=320`，使 64 维嵌入恰好是输入维度的五分之一；Transformer 使用
+论文所述的 8 个注意力头和 2 个编码层。论文没有规定可执行的序列长度、位置编码和
+FFN 宽度，本实现分别选择 8、正弦位置编码和 128。解码输出使用 Sigmoid 与 `[0,1]`
+最小-最大归一化匹配。
+
+实现要求 `prediction_delay >= frame_length`，避免输入帧和延迟目标帧共享相同噪声
+样本而形成直接复制捷径。实际延迟还应超过目标噪声的主要相关长度。
+
+论文损失将网络当前输入的输出与延迟目标比较。本实现把预测结果放回延迟目标对应的
+时间位置，以便与原波形对齐。这需要未来 `prediction_delay` 个样本，因此当前 API 是
+离线增强器，`valid_slice` 不包含末尾无法预测的区域；不能据此宣称实时因果处理。
+
+固定种子单谱线场景获得了明显 SNR 增益，但多谱线试验中最弱谱线仍可能被压制。
+Transformer 的加入本身不证明弱谱线一定改善，后续比较必须报告逐谱线指标并采用
+参数量和训练预算匹配的 AE-DLE 对照。
+
 ## 可视化谱线增强效果
 
 ```python
