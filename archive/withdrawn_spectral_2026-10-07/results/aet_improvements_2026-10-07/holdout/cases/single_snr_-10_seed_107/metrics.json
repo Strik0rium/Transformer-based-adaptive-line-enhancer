@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "model_seed": 1107,
+      "algorithm": "ALE",
+      "output_snr_db": 1.2789610713377755,
+      "mse": 0.0739720718136812,
+      "input_snr_db": -10.103270359992692,
+      "strongest_tone_retention": 0.520729788710043,
+      "weakest_tone_retention": 0.520729788710043,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "model_seed": 1107,
+      "algorithm": "AE",
+      "output_snr_db": 6.262520809929329,
+      "mse": 0.02348074157285201,
+      "input_snr_db": -10.103270359992692,
+      "strongest_tone_retention": 0.9235578420137752,
+      "weakest_tone_retention": 0.9235578420137752,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "model_seed": 1107,
+      "algorithm": "AET",
+      "output_snr_db": -0.30317491728642765,
+      "mse": 0.10648327049902281,
+      "input_snr_db": -10.103270359992692,
+      "strongest_tone_retention": 0.9095166094090563,
+      "weakest_tone_retention": 0.9095166094090563,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "model_seed": 1107,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 15.942325051105437,
+      "mse": 0.0025277340847279037,
+      "input_snr_db": -10.103270359992692,
+      "strongest_tone_retention": 0.9328034711937464,
+      "weakest_tone_retention": 0.9328034711937464,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "model_seed": 1107,
+      "algorithm": "spectral_only",
+      "output_snr_db": 15.978630706598484,
+      "mse": 0.0025066911001234205,
+      "input_snr_db": -10.103270359992692,
+      "strongest_tone_retention": 0.9327043935812992,
+      "weakest_tone_retention": 0.9327043935812992,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 6.262520809929329,
+      "output_snr_db": 15.942325051105437,
+      "snr_difference_db": 9.679804241176107,
+      "required_db_improvement": 0.626252080992933,
+      "relative_db_improvement_percent": 154.56721877600182,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 89.23486263461788
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 107,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 6.262520809929329,
+      "output_snr_db": 15.978630706598484,
+      "snr_difference_db": 9.716109896669154,
+      "required_db_improvement": 0.626252080992933,
+      "relative_db_improvement_percent": 155.14694787543226,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 89.32448069263022
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00360706954511
+    ],
+    "head_noise_floor": 6123.088501685814,
+    "head_threshold": 95959.77504889497,
+    "head_seconds": 0.006412500000806176,
+    "regularized_selection": {}
+  }
+}

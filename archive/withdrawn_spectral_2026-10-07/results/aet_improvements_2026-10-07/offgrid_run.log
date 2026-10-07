@@ -1,0 +1,44 @@
+single -20 seed 200: AET+head=20.28 baseline=-3.05, margin=23.02, lines=[np.float64(111.0161)]
+single -20 seed 201: AET+head=13.76 baseline=-4.57, margin=17.88, lines=[np.float64(102.3539)]
+single -20 seed 202: AET+head=10.06 baseline=-3.70, margin=13.39, lines=[np.float64(103.4989)]
+single -15 seed 200: AET+head=24.71 baseline=2.64, margin=21.81, lines=[np.float64(111.0167)]
+single -15 seed 201: AET+head=19.27 baseline=1.73, margin=17.37, lines=[np.float64(102.3568)]
+single -15 seed 202: AET+head=14.62 baseline=1.40, margin=13.08, lines=[np.float64(103.5033)]
+single -10 seed 200: AET+head=29.24 baseline=7.19, margin=21.32, lines=[np.float64(111.0171)]
+single -10 seed 201: AET+head=24.53 baseline=6.28, margin=17.61, lines=[np.float64(102.3582)]
+single -10 seed 202: AET+head=19.31 baseline=6.44, margin=12.22, lines=[np.float64(103.5059)]
+single -5 seed 200: AET+head=34.32 baseline=11.74, margin=21.41, lines=[np.float64(111.0173)]
+single -5 seed 201: AET+head=29.64 baseline=10.72, margin=17.85, lines=[np.float64(102.3589)]
+single -5 seed 202: AET+head=24.28 baseline=11.15, margin=12.01, lines=[np.float64(103.5074)]
+single 0 seed 200: AET+head=39.26 baseline=15.82, margin=21.86, lines=[np.float64(111.0175)]
+single 0 seed 201: AET+head=34.65 baseline=15.99, margin=17.06, lines=[np.float64(102.3593)]
+single 0 seed 202: AET+head=29.24 baseline=15.11, margin=12.62, lines=[np.float64(103.5082)]
+multiline -20 seed 200: AET+head=9.12 baseline=-3.43, margin=12.21, lines=[np.float64(55.5067), np.float64(110.7882)]
+multiline -20 seed 201: AET+head=5.88 baseline=-4.50, margin=9.94, lines=[np.float64(51.1825)]
+multiline -20 seed 202: AET+head=8.70 baseline=-3.99, margin=12.29, lines=[np.float64(51.7609), np.float64(112.4552)]
+multiline -15 seed 200: AET+head=16.09 baseline=-0.13, margin=16.21, lines=[np.float64(55.5074), np.float64(110.7925), np.float64(186.4361)]
+multiline -15 seed 201: AET+head=11.31 baseline=0.33, margin=10.95, lines=[np.float64(51.1813), np.float64(105.539)]
+multiline -15 seed 202: AET+head=15.45 baseline=0.05, margin=15.39, lines=[np.float64(51.7579), np.float64(112.4531), np.float64(171.1984)]
+multiline -10 seed 200: AET+head=21.35 baseline=3.91, margin=17.05, lines=[np.float64(55.5079), np.float64(110.7941), np.float64(186.4342)]
+multiline -10 seed 201: AET+head=21.84 baseline=3.84, margin=17.62, lines=[np.float64(51.1807), np.float64(105.5358), np.float64(162.3139)]
+multiline -10 seed 202: AET+head=20.33 baseline=3.43, margin=16.56, lines=[np.float64(51.7564), np.float64(112.4514), np.float64(171.201)]
+multiline -5 seed 200: AET+head=26.74 baseline=7.55, margin=18.44, lines=[np.float64(55.5083), np.float64(110.7948), np.float64(186.433)]
+multiline -5 seed 201: AET+head=26.68 baseline=5.45, margin=20.69, lines=[np.float64(51.1803), np.float64(105.5342), np.float64(162.3097)]
+multiline -5 seed 202: AET+head=25.16 baseline=6.99, margin=17.47, lines=[np.float64(51.7556), np.float64(112.4502), np.float64(171.2026)]
+multiline 0 seed 200: AET+head=31.18 baseline=10.45, margin=19.69, lines=[np.float64(55.5085), np.float64(110.7951), np.float64(186.4322)]
+multiline 0 seed 201: AET+head=32.33 baseline=10.13, margin=21.18, lines=[np.float64(51.1801), np.float64(105.5334), np.float64(162.3076)]
+multiline 0 seed 202: AET+head=30.12 baseline=9.54, margin=19.63, lines=[np.float64(51.7552), np.float64(112.4495), np.float64(171.2036)]
+{
+  "AET_spectral": {
+    "case_count": 30,
+    "passed_cases": 30,
+    "minimum_margin_db": 9.935374048923082,
+    "minimum_relative_db_improvement_percent": 93.50887211356435
+  },
+  "spectral_only": {
+    "case_count": 30,
+    "passed_cases": 30,
+    "minimum_margin_db": 10.007356766488202,
+    "minimum_relative_db_improvement_percent": 93.83453302078024
+  }
+}

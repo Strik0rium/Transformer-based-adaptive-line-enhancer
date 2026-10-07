@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "model_seed": 1108,
+      "algorithm": "ALE",
+      "output_snr_db": -5.531421139028881,
+      "mse": 0.03566293624556358,
+      "input_snr_db": -20.023227512672666,
+      "strongest_tone_retention": 0.11534691724453128,
+      "weakest_tone_retention": 0.11534691724453128,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "model_seed": 1108,
+      "algorithm": "AE",
+      "output_snr_db": -3.5249620864029696,
+      "mse": 0.022468350592952244,
+      "input_snr_db": -20.023227512672666,
+      "strongest_tone_retention": 0.33072638285951556,
+      "weakest_tone_retention": 0.33072638285951556,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "model_seed": 1108,
+      "algorithm": "AET",
+      "output_snr_db": -10.56290321281686,
+      "mse": 0.11359659258137876,
+      "input_snr_db": -20.023227512672666,
+      "strongest_tone_retention": 0.5160105644456728,
+      "weakest_tone_retention": 0.5160105644456728,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "model_seed": 1108,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 17.633251685859218,
+      "mse": 0.00017208769387453803,
+      "input_snr_db": -20.023227512672666,
+      "strongest_tone_retention": 0.8853213811618528,
+      "weakest_tone_retention": 0.8853213811618528,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "model_seed": 1108,
+      "algorithm": "spectral_only",
+      "output_snr_db": 18.9033217413104,
+      "mse": 0.00012845257336262822,
+      "input_snr_db": -20.023227512672666,
+      "strongest_tone_retention": 0.9073384011664677,
+      "weakest_tone_retention": 0.9073384011664677,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -3.5249620864029696,
+      "output_snr_db": 17.633251685859218,
+      "snr_difference_db": 21.158213772262187,
+      "required_db_improvement": 0.35249620864029696,
+      "relative_db_improvement_percent": 600.2394707698256,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.2340884429295
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 108,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -3.5249620864029696,
+      "output_snr_db": 18.9033217413104,
+      "snr_difference_db": 22.42828382771337,
+      "required_db_improvement": 0.35249620864029696,
+      "relative_db_improvement_percent": 636.2702144861989,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.42829549133472
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00558856928585
+    ],
+    "head_noise_floor": 5911.9763940901785,
+    "head_threshold": 92651.26981507419,
+    "head_seconds": 0.004519899999650079,
+    "regularized_selection": {}
+  }
+}

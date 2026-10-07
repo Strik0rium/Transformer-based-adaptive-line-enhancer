@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "ALE",
+      "output_snr_db": -6.177565274992668,
+      "mse": 0.04042081171836531,
+      "input_snr_db": -20.017261488096626,
+      "strongest_tone_retention": 0.18023300387054877,
+      "weakest_tone_retention": 0.18023300387054877,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AE",
+      "output_snr_db": -3.018765045004029,
+      "mse": 0.019531023727921454,
+      "input_snr_db": -20.017261488096626,
+      "strongest_tone_retention": 0.3735341581808048,
+      "weakest_tone_retention": 0.3735341581808048,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET",
+      "output_snr_db": -9.370420196378213,
+      "mse": 0.08431221962013052,
+      "input_snr_db": -20.017261488096626,
+      "strongest_tone_retention": 0.6613034365929517,
+      "weakest_tone_retention": 0.6613034365929517,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 12.576231082292598,
+      "mse": 0.0005385492121682726,
+      "input_snr_db": -20.017261488096626,
+      "strongest_tone_retention": 1.1448047167438833,
+      "weakest_tone_retention": 1.1448047167438833,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "spectral_only",
+      "output_snr_db": 11.924281822128012,
+      "mse": 0.000625778043234433,
+      "input_snr_db": -20.017261488096626,
+      "strongest_tone_retention": 1.169070700484458,
+      "weakest_tone_retention": 1.169070700484458,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -3.018765045004029,
+      "output_snr_db": 12.576231082292598,
+      "snr_difference_db": 15.594996127296627,
+      "required_db_improvement": 0.30187650450040293,
+      "relative_db_improvement_percent": 516.6018519098035,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 97.24259608881451
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 103,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -3.018765045004029,
+      "output_snr_db": 11.924281822128012,
+      "snr_difference_db": 14.943046867132042,
+      "required_db_improvement": 0.30187650450040293,
+      "relative_db_improvement_percent": 495.0052966812492,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 96.79597929964203
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00505252235726
+    ],
+    "head_noise_floor": 5957.499875748862,
+    "head_threshold": 93364.70439277253,
+    "head_seconds": 0.004563299999972514,
+    "regularized_selection": {}
+  }
+}

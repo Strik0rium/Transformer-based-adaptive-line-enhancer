@@ -1,0 +1,83 @@
+{
+  "epochs": 60,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "snrs": [
+    -20,
+    -15,
+    -10,
+    -5,
+    0
+  ],
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "scene_configs": {
+    "single": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "multiline": {
+      "frequencies_hz": [
+        50.0,
+        100.0,
+        180.0
+      ],
+      "amplitudes": [
+        1.0,
+        0.6,
+        0.3
+      ]
+    }
+  },
+  "threads": 2,
+  "sample_rate_hz": 1000,
+  "num_samples": 16000,
+  "evaluation_from": 8000,
+  "source_hashes": {
+    "src\\transformer_based_adaptive_line_enhancer\\__init__.py": "2537f93670e839cd85554d9dbf4e62b261eef2486e4496e81fe2d1592e7f3b9b",
+    "src\\transformer_based_adaptive_line_enhancer\\ae_dle.py": "b332cd70bf5b5cd83152a29227dfab688869e59f47f88fb8b6ea9da091869745",
+    "src\\transformer_based_adaptive_line_enhancer\\aet_dle.py": "5fd683dc89b9778ee722367f025d714bddabdbf5827ba3c0eb4e7a037d34a4ee",
+    "src\\transformer_based_adaptive_line_enhancer\\ale.py": "d374c81badb24ec31f0d57df4173a6e885aaac241190086dfe6e43e92e9c1e7b",
+    "src\\transformer_based_adaptive_line_enhancer\\signals.py": "ea58c89f13c44316b12d6c08714c2708967f89993904936ad058858729c4537e",
+    "src\\transformer_based_adaptive_line_enhancer\\visualization.py": "bb46ea5f5faff912cfb2adae4fc23dfa0ddd084d795998449213fa03ed899aba"
+  },
+  "script_sha256": "c83e0ec5c8a000ff538c7bb4f4b65cce0830d0a86e3c1c22eadf564dab32e37d",
+  "protocol_hash": "d4959b8bef8d134824a883f463418b9109990a05f03cb5f3872ff9969e0db20a",
+  "git_commit": "4d8eb295273257a7fb78b718d75db54e27422292",
+  "ae_config": {
+    "frame_length": 256,
+    "frame_hop": 64,
+    "prediction_delay": 1000,
+    "hidden_dim": 128,
+    "bottleneck_dim": 32,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 60,
+    "seed": 0
+  },
+  "aet_config": {
+    "frame_length": 320,
+    "frame_hop": 64,
+    "prediction_delay": 1000,
+    "sequence_length": 8,
+    "sequence_stride": 1,
+    "embedding_dim": 64,
+    "attention_heads": 8,
+    "transformer_layers": 2,
+    "feedforward_dim": 128,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "batch_size": 16,
+    "epochs": 60,
+    "seed": 0
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "ALE",
+      "output_snr_db": 10.558703287714073,
+      "mse": 0.08731441769560155,
+      "input_snr_db": 0.01363909646818525,
+      "strongest_tone_retention": 0.9819457125076676,
+      "weakest_tone_retention": 0.9819457125076676,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AE",
+      "output_snr_db": 16.33195784005337,
+      "mse": 0.023107901454187,
+      "input_snr_db": 0.01363909646818525,
+      "strongest_tone_retention": 1.0062779692181942,
+      "weakest_tone_retention": 1.0062779692181942,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AET",
+      "output_snr_db": 15.19642305433064,
+      "mse": 0.030013316315239034,
+      "input_snr_db": 0.01363909646818525,
+      "strongest_tone_retention": 0.9996635746517452,
+      "weakest_tone_retention": 0.9996635746517452,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 37.042969215879225,
+      "mse": 0.00019618209554702362,
+      "input_snr_db": 0.01363909646818525,
+      "strongest_tone_retention": 1.0096660357628613,
+      "weakest_tone_retention": 1.0096660357628613,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "spectral_only",
+      "output_snr_db": 36.99572924214123,
+      "mse": 0.00019832769596507297,
+      "input_snr_db": 0.01363909646818525,
+      "strongest_tone_retention": 1.0099760148386718,
+      "weakest_tone_retention": 1.0099760148386718,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 16.33195784005337,
+      "output_snr_db": 37.042969215879225,
+      "snr_difference_db": 20.711011375825855,
+      "required_db_improvement": 1.633195784005337,
+      "relative_db_improvement_percent": 126.81278986058278,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.1510172572963
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": 0,
+      "noise_seed": 100,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 16.33195784005337,
+      "output_snr_db": 36.99572924214123,
+      "snr_difference_db": 20.66377140208786,
+      "required_db_improvement": 1.633195784005337,
+      "relative_db_improvement_percent": 126.52354117282202,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.14173211981941
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00012104104331
+    ],
+    "head_noise_floor": 5974.7039212472455,
+    "head_threshold": 93634.32263126464,
+    "head_seconds": 0.003749700000298617,
+    "regularized_selection": {}
+  }
+}

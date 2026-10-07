@@ -1,0 +1,13 @@
+{
+  "cases_verified": 30,
+  "metric_rows_verified": 90,
+  "summary_rows_verified": 30,
+  "pngs_verified": 10,
+  "max_saved_signal_metric_difference": 0.0,
+  "max_saved_checkpoint_validation_loss_difference": 0.0,
+  "independent_validation_observations_reproduced": true,
+  "early_stop_decisions_replayed": true,
+  "baseline_signals_unchanged": true,
+  "source_and_input_hashes_match": true,
+  "validator_sha256": "19443d409ac47a4e23622fef31a63a7996a4f329099a968c8b4b8b4b39cd9614"
+}

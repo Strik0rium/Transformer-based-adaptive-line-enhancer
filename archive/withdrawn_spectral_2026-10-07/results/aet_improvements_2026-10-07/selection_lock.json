@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-07",
+  "chosen_method": "AET_60 + spectral residual head",
+  "head_config": {
+    "sample_rate_hz": 1000.0,
+    "family_false_alarm": 0.01,
+    "maximum_lines": 24,
+    "padding_factor": 8,
+    "neural_weight": 0.05
+  },
+  "criterion": "SNR_new - SNR_best >= 0.10 * abs(SNR_best in dB); positive change required",
+  "holdout_noise_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "holdout_model_seeds": [
+    1100,
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108,
+    1109
+  ],
+  "offgrid_noise_seeds": [
+    200,
+    201,
+    202
+  ],
+  "offgrid_model_seeds": [
+    1200,
+    1201,
+    1202
+  ],
+  "scene_and_snr_cases": [
+    "single",
+    "multiline",
+    -20,
+    -15,
+    -10,
+    -5,
+    0
+  ],
+  "selection_uses_only_pilot": true,
+  "test_results_must_not_be_used_to_adjust_method": true,
+  "pilot_acceptance": {
+    "AET_regularized": {
+      "case_count": 30,
+      "passed_cases": 0,
+      "minimum_margin_db": -10.486686541440614,
+      "minimum_relative_db_improvement_percent": -10121.516952489405
+    },
+    "AET_spectral": {
+      "case_count": 30,
+      "passed_cases": 30,
+      "minimum_margin_db": 6.181948277065936,
+      "minimum_relative_db_improvement_percent": 98.46817019597083
+    },
+    "spectral_only": {
+      "case_count": 30,
+      "passed_cases": 30,
+      "minimum_margin_db": 6.128397590030046,
+      "minimum_relative_db_improvement_percent": 99.19791108868544
+    }
+  },
+  "script_sha256": "24f799716541891e0d43c56332fb8f5a7e96c96e5cafe73f3540f426f6e48258",
+  "source_hashes": {
+    "src\\transformer_based_adaptive_line_enhancer\\aet_dle.py": "5fd683dc89b9778ee722367f025d714bddabdbf5827ba3c0eb4e7a037d34a4ee",
+    "src\\transformer_based_adaptive_line_enhancer\\aet_improved.py": "c1ba83a9e86ba37e0dfd414b7307b950829cf969d2baf265031ee74ad73cdb69",
+    "src\\transformer_based_adaptive_line_enhancer\\ae_dle.py": "b332cd70bf5b5cd83152a29227dfab688869e59f47f88fb8b6ea9da091869745",
+    "src\\transformer_based_adaptive_line_enhancer\\ale.py": "d374c81badb24ec31f0d57df4173a6e885aaac241190086dfe6e43e92e9c1e7b",
+    "src\\transformer_based_adaptive_line_enhancer\\signals.py": "ea58c89f13c44316b12d6c08714c2708967f89993904936ad058858729c4537e",
+    "src\\transformer_based_adaptive_line_enhancer\\visualization.py": "bb46ea5f5faff912cfb2adae4fc23dfa0ddd084d795998449213fa03ed899aba",
+    "src\\transformer_based_adaptive_line_enhancer\\__init__.py": "2537f93670e839cd85554d9dbf4e62b261eef2486e4496e81fe2d1592e7f3b9b"
+  }
+}

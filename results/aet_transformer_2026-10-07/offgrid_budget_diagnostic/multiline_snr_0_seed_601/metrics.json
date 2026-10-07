@@ -1,0 +1,38 @@
+{
+  "role": "post-hoc budget diagnosis, not held-out evidence",
+  "config": {
+    "patch_length": 8,
+    "prediction_delay": 1000,
+    "heads": 1,
+    "top_k": 512,
+    "temperature": 0.05,
+    "learning_rate": 0.002,
+    "weight_decay": 0.01,
+    "updates": 1200,
+    "validate_every": 5,
+    "patience": 80,
+    "seed": 2601,
+    "attention": "lag",
+    "ffn": true,
+    "max_lag_tokens": null,
+    "noisy_residual": false
+  },
+  "metrics": {
+    "scene": "multiline",
+    "requested_snr_db": 0,
+    "noise_seed": 601,
+    "model_seed": 2601,
+    "before_output_snr_db": 14.469606965263164,
+    "output_snr_db": 16.667463414021388,
+    "input_snr_db": -0.0661841185083423,
+    "snr_gain_db": 16.73364753252973,
+    "mse": 0.021128989299255396,
+    "strongest_tone_retention": 1.000967361013101,
+    "weakest_tone_retention": 0.9810470319307787,
+    "selected_update": 605,
+    "stopped_update": 685,
+    "baseline_snr_db": 13.74743686027389,
+    "margin_db": 1.5452828677201085,
+    "passes_10_percent": true
+  }
+}

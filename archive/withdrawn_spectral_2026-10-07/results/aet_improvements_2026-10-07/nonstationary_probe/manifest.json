@@ -1,0 +1,25 @@
+{
+  "scope": "Nonstationary counterexample probe, not used for tuning",
+  "frequency_hz": "80 + 5 * time_seconds",
+  "noise_seeds": [
+    300,
+    301
+  ],
+  "snrs": [
+    -10,
+    0
+  ],
+  "evaluation_interval": [
+    8000,
+    14976
+  ],
+  "head_config": {
+    "sample_rate_hz": 1000.0,
+    "family_false_alarm": 0.01,
+    "maximum_lines": 24,
+    "padding_factor": 8,
+    "neural_weight": 0.05
+  },
+  "source_sha256": "c1ba83a9e86ba37e0dfd414b7307b950829cf969d2baf265031ee74ad73cdb69",
+  "script_sha256": "596f4ea718cc629b1e90acdcf97232cd9a789ca60023341f13473a5b41293cf3"
+}

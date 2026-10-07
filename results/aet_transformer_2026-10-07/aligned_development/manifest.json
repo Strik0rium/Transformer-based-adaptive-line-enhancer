@@ -1,0 +1,21 @@
+{
+  "role": "development only; transfer seeds reused after failure",
+  "config": {
+    "patch_length": 8,
+    "prediction_delay": 1000,
+    "heads": 1,
+    "top_k": 512,
+    "temperature": 0.05,
+    "learning_rate": 0.002,
+    "weight_decay": 0.01,
+    "updates": 1200,
+    "validate_every": 5,
+    "patience": 80,
+    "seed": 0,
+    "attention": "lag",
+    "ffn": true,
+    "max_lag_tokens": null,
+    "noisy_residual": false
+  },
+  "source_sha256": "052730bf6b5fa0eb6fcbdb3723811b49ed06ec184669bca548096e982df5db33"
+}

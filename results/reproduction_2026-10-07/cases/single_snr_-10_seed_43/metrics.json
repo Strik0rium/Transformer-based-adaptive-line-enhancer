@@ -1,0 +1,103 @@
+{
+  "protocol_hash": "d4959b8bef8d134824a883f463418b9109990a05f03cb5f3872ff9969e0db20a",
+  "metrics": [
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "ALE",
+      "full_input_snr_db": -9.999999999999998,
+      "evaluation_input_snr_db": -10.029266923217888,
+      "output_snr_db": 1.4391498579461532,
+      "snr_gain_db": 11.468416781164041,
+      "rmse": 0.2691642552567506,
+      "weakest_tone_retention": 0.6612404725500634,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976,
+      "training_seconds": 0.0,
+      "inference_seconds": 0.048395399999662914,
+      "total_seconds": 0.048395399999662914,
+      "parameter_count": 32
+    },
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AE",
+      "full_input_snr_db": -9.999999999999998,
+      "evaluation_input_snr_db": -10.029266923217888,
+      "output_snr_db": 6.532356936939863,
+      "snr_gain_db": 16.561623860157752,
+      "rmse": 0.1497466210511829,
+      "weakest_tone_retention": 1.0376804054527038,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976,
+      "training_seconds": 0.5630203999999139,
+      "inference_seconds": 0.002143100000012055,
+      "total_seconds": 0.565163499999926,
+      "parameter_count": 74272
+    },
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET",
+      "full_input_snr_db": -9.999999999999998,
+      "evaluation_input_snr_db": -10.029266923217888,
+      "output_snr_db": -0.5803254121541873,
+      "snr_gain_db": 9.448941511063701,
+      "rmse": 0.3396183510477388,
+      "weakest_tone_retention": 1.0073853867957494,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976,
+      "training_seconds": 3.7647218000001885,
+      "inference_seconds": 0.017077299999982642,
+      "total_seconds": 3.781799100000171,
+      "parameter_count": 116608
+    }
+  ],
+  "tones": [
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "ALE",
+      "frequency_hz": 100.0,
+      "clean_amplitude": 0.44928405539789285,
+      "output_amplitude": 0.2970848011005115,
+      "amplitude_retention": 0.6612404725500634,
+      "amplitude_error_percent": -33.87595274499367,
+      "phase_error_deg": 1.4514920073904016
+    },
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AE",
+      "frequency_hz": 100.0,
+      "clean_amplitude": 0.44928405539789285,
+      "output_amplitude": 0.46621326076872044,
+      "amplitude_retention": 1.0376804054527038,
+      "amplitude_error_percent": 3.768040545270379,
+      "phase_error_deg": 2.01425847348505
+    },
+    {
+      "scene": "single",
+      "requested_snr_db": -10,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET",
+      "frequency_hz": 100.0,
+      "clean_amplitude": 0.44928405539789285,
+      "output_amplitude": 0.45260219192816914,
+      "amplitude_retention": 1.0073853867957494,
+      "amplitude_error_percent": 0.7385386795749405,
+      "phase_error_deg": 0.5404166757346861
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "ALE",
+      "output_snr_db": -5.333193380431335,
+      "mse": 0.033905927483465964,
+      "input_snr_db": -19.986360903531814,
+      "strongest_tone_retention": 0.15652561293911868,
+      "weakest_tone_retention": 0.15652561293911868,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AE",
+      "output_snr_db": -2.0191215067894626,
+      "mse": 0.015807691127025333,
+      "input_snr_db": -19.986360903531814,
+      "strongest_tone_retention": 0.4015355059533151,
+      "weakest_tone_retention": 0.4015355059533151,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AET",
+      "output_snr_db": -10.240314938756674,
+      "mse": 0.10495129087462901,
+      "input_snr_db": -19.986360903531814,
+      "strongest_tone_retention": 0.5625294781554404,
+      "weakest_tone_retention": 0.5625294781554404,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 18.653300192934346,
+      "mse": 0.00013540237170101604,
+      "input_snr_db": -19.986360903531814,
+      "strongest_tone_retention": 1.0811418199538645,
+      "weakest_tone_retention": 1.0811418199538645,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "model_seed": 1100,
+      "algorithm": "spectral_only",
+      "output_snr_db": 17.26862827305927,
+      "mse": 0.0001862487915133335,
+      "input_snr_db": -19.986360903531814,
+      "strongest_tone_retention": 1.1060109310053015,
+      "weakest_tone_retention": 1.1060109310053015,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -2.0191215067894626,
+      "output_snr_db": 18.653300192934346,
+      "snr_difference_db": 20.67242169972381,
+      "required_db_improvement": 0.20191215067894627,
+      "relative_db_improvement_percent": 1023.8324751735389,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.14343992039719
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -20,
+      "noise_seed": 100,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": -2.0191215067894626,
+      "output_snr_db": 17.26862827305927,
+      "snr_difference_db": 19.287749779848735,
+      "required_db_improvement": 0.20191215067894627,
+      "relative_db_improvement_percent": 955.2545359450675,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 98.82178371264531
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00164966210073
+    ],
+    "head_noise_floor": 5977.406273374902,
+    "head_threshold": 93676.67333421488,
+    "head_seconds": 0.004503499999373162,
+    "regularized_selection": {}
+  }
+}

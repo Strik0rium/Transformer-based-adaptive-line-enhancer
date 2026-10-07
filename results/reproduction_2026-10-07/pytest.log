@@ -1,0 +1,5 @@
+Executed 2026-10-07 using the project .venv created with uv sync --locked --dev.
+Command: .\.venv\Scripts\python.exe -m pytest -p no:cacheprovider --tb=short
+Environment: OMP_NUM_THREADS=2; MKL_NUM_THREADS=2.
+............................................................             [100%]
+60 passed in 23.88s

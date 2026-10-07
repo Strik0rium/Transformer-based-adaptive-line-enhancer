@@ -1,0 +1,26 @@
+{
+  "passed": 100,
+  "cases": 100,
+  "minimum_relative_db_percent": 24.102243071564132,
+  "minimum_margin_db": 2.04319868423086,
+  "fixed": {
+    "cases": 50,
+    "passed": 50,
+    "min_margin_db": 2.7264334832572525,
+    "min_relative_db_percent": 32.04634040438895
+  },
+  "random": {
+    "cases": 50,
+    "passed": 50,
+    "min_margin_db": 2.04319868423086,
+    "min_relative_db_percent": 24.102243071564132
+  },
+  "q_alignment_gain_random_multiline_db": 1.769553155327552,
+  "learned_qk_gain_random_multiline_db": 1.894046051756618,
+  "no_attention_loss_db": 11.040109704678814,
+  "short_attention_loss_db": 5.879661875404865,
+  "weak_low_percent": 4.347860187267108,
+  "weak_high_percent": 93.28100906409506,
+  "selected_update_min": 1,
+  "selected_update_max": 115
+}
