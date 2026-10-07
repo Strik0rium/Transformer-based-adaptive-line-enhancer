@@ -1,0 +1,33 @@
+{
+  "phases": [
+    {
+      "phase": "pilot",
+      "case_count": 30,
+      "metric_rows": 210,
+      "all_head_outputs_replayed": true,
+      "all_10_percent_decisions_recomputed": true
+    },
+    {
+      "phase": "holdout",
+      "case_count": 100,
+      "metric_rows": 500,
+      "all_head_outputs_replayed": true,
+      "all_10_percent_decisions_recomputed": true
+    },
+    {
+      "phase": "offgrid",
+      "case_count": 30,
+      "metric_rows": 150,
+      "all_head_outputs_replayed": true,
+      "all_10_percent_decisions_recomputed": true
+    }
+  ],
+  "maximum_metric_difference": 0.0,
+  "maximum_original_checkpoint_replay_difference": 0.0,
+  "independent_noise_and_model_seeds_verified": true,
+  "shared_head_controls": 160,
+  "method_locked_before_test_metrics": true,
+  "nonstationary_probe_cases_verified": 4,
+  "regularized_diagnostic_cases": 30,
+  "validator_sha256": "5b69cc7f625fd61c53d40ee8e63b366023eaa8e25eefcddd917a188cd30bee54"
+}

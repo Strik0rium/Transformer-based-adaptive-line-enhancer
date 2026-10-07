@@ -1,0 +1,31 @@
+{
+  "source_sha256": "42102b60fc2323198fddb18abc270c3f815766ea57daa36874a814f39526f53b",
+  "variants": [
+    "lag8_wide",
+    "lag8_soft",
+    "lag8",
+    "lag8_frozen",
+    "lag8_none",
+    "lag8_uniform",
+    "lag8_short",
+    "lag8_residual"
+  ],
+  "snrs": [
+    -20,
+    -15,
+    -10,
+    -5,
+    0
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "updates": 400,
+  "role": "development data; not a locked test"
+}

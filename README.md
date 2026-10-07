@@ -245,3 +245,63 @@ ALE 尚未取得完整延迟输入向量的启动区间。
 ```bash
 uv run pytest
 ```
+
+## 三算法统一 SNR 扫描复现
+
+`scripts/reproduce_comparison.py` 使用相同观测比较 ALE、AE-DLE 和 AET-DLE，覆盖
+单谱线及多谱线场景、-20/-15/-10/-5/0 dB 和三个随机种子。AE/AET 保留默认网络
+结构，每段观测自监督训练 60 轮；评价取三算法公共有效区间，并排除前半段。
+
+```bash
+uv run python scripts/reproduce_comparison.py --epochs 60 --seeds 42 43 44 --resume
+```
+
+结果保存到 `results/reproduction_2026-10-07/`，包括时频图、频谱和波形对比、
+SNR 曲线、逐谱线指标 CSV、原始信号 NPZ、训练损失，以及首个种子的模型权重。
+协议、运行环境和源码哈希一并记录，中断后可用相同参数恢复；不同参数使用另一个
+`--output` 目录。
+
+详细结果见 [复现报告](results/reproduction_2026-10-07/REPRODUCTION_REPORT.md)。
+这是同段观测增强实验；模型参数量和计算预算不同，不能直接视为 Transformer
+架构的独立贡献或跨观测泛化结论。
+
+## AET 验证早停对比
+
+`scripts/compare_aet_early_stopping.py` 在同一批观测上比较原 ALE、固定 60 轮的
+AE 与验证早停的 AET。AET 每轮检查三个独立带噪重复观测，最多训练 120 轮，
+连续 10 轮验证 MSE 未明显改善便停止，并恢复最佳验证检查点。选轮次不使用
+干净参考 SNR；干净信号只用于构造合成重复观测和最终评价。
+
+```powershell
+.\.venv\Scripts\python.exe scripts/compare_aet_early_stopping.py --resume
+```
+
+默认输出到 `results/aet_early_stopping_2026-10-07/`，包括三算法 SNR 对比图、
+谱线保留图、早停轮次、逐轮验证日志、原始信号和检查点。详细协议和结果见
+[早停对比报告](results/aet_early_stopping_2026-10-07/EARLY_STOPPING_REPORT.md)。
+更改早停参数时使用新的 `--output` 目录。这是具备独立重复观测的合成实验；
+不能将其直接解释为只有单段观测时可用的早停方案，也不能仅根据 SNR 增益
+判断低 SNR 下是否成功恢复谱线。
+
+## AET Transformer 内部优化：时间对齐的长时距注意力
+
+最终实验入口为 `scripts/evaluate_aligned_aet.py`，模型实现为
+`src/transformer_based_adaptive_line_enhancer/aet_aligned_attention.py`。
+该变体使用目标物理时刻的带噪 Q、延迟输入的 K/V、可学习时距相关性和长范围
+attention 聚合；重建仍由网络内部完成，不使用谱峰检测或通用频域输出头。
+原 ALE、AE 和 AET 保留作为对照。
+
+```powershell
+.\.venv\Scripts\python.exe scripts/evaluate_aligned_aet.py
+.\.venv\Scripts\python.exe scripts/validate_aligned_aet.py
+.\.venv\Scripts\python.exe scripts/report_aligned_aet.py
+```
+
+最终产物位于 `results/aet_transformer_2026-10-07/final_validation/`，包括固定谱线
+和随机频率的 SNR 扫描、注意力消融、每例波形、训练日志及模型检查点。
+结论、10% 的 dB 计算口径和局限见
+[Transformer 优化报告](results/aet_transformer_2026-10-07/AET_TRANSFORMER_REPORT.md)。
+这是需要独立含噪验证观测的离线自适应模型，不需要预训练。
+
+之前的通用频域输出头已按要求撤销，历史文件保存于
+[撤销存档](archive/withdrawn_spectral_2026-10-07/WITHDRAWN.md)。

@@ -1,0 +1,73 @@
+{
+  "max_epochs": 120,
+  "patience": 10,
+  "relative_min_delta": 0.0001,
+  "validation_repeats": 3,
+  "validation": "Independent IID noisy realizations; delayed-pair MSE",
+  "baseline_protocol_hash": "d4959b8bef8d134824a883f463418b9109990a05f03cb5f3872ff9969e0db20a",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "snrs": [
+    -20,
+    -15,
+    -10,
+    -5,
+    0
+  ],
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "source_hashes": {
+    "src\\transformer_based_adaptive_line_enhancer\\__init__.py": "2537f93670e839cd85554d9dbf4e62b261eef2486e4496e81fe2d1592e7f3b9b",
+    "src\\transformer_based_adaptive_line_enhancer\\ae_dle.py": "b332cd70bf5b5cd83152a29227dfab688869e59f47f88fb8b6ea9da091869745",
+    "src\\transformer_based_adaptive_line_enhancer\\aet_dle.py": "5fd683dc89b9778ee722367f025d714bddabdbf5827ba3c0eb4e7a037d34a4ee",
+    "src\\transformer_based_adaptive_line_enhancer\\ale.py": "d374c81badb24ec31f0d57df4173a6e885aaac241190086dfe6e43e92e9c1e7b",
+    "src\\transformer_based_adaptive_line_enhancer\\signals.py": "ea58c89f13c44316b12d6c08714c2708967f89993904936ad058858729c4537e",
+    "src\\transformer_based_adaptive_line_enhancer\\visualization.py": "bb46ea5f5faff912cfb2adae4fc23dfa0ddd084d795998449213fa03ed899aba"
+  },
+  "script_sha256": "a0639fbbcc53049a591102e1e831f253fdc3a73519f07b2cd55b898f597e5169",
+  "helper_hashes": {
+    "reproduce_comparison.py": "c83e0ec5c8a000ff538c7bb4f4b65cce0830d0a86e3c1c22eadf564dab32e37d",
+    "aet_epoch_sweep.py": "2c6cc0acad064c871fcd7e82c8be19169e715e78ec12120b75d3edbd4818d633"
+  },
+  "threads": 2,
+  "torch_version": "2.13.0+cpu",
+  "numpy_version": "2.5.2",
+  "baseline_input_hashes": {
+    "single_snr_-20_seed_42": "dfa18727d43f1178a2a67c3ff6b417ebdff2526e5c2272515d16a05b4a006c6d",
+    "single_snr_-20_seed_43": "e1bea3c57005cf94392faa3b6bc7862d8cb832cefa25710393bc2e3469ccef56",
+    "single_snr_-20_seed_44": "b224f0ad8f0519fbb149eed6b6fc44fb3d3ef016cabcd7a034cdc3de85371382",
+    "single_snr_-15_seed_42": "9daff05e55fbdca1afe95bbba964411fc07878252f85bf406b9ac58f43a1de79",
+    "single_snr_-15_seed_43": "5c0ce20263e33bd0b008ca9ca0846ef70e51ac3f9fe48b08177bf879c96ee727",
+    "single_snr_-15_seed_44": "a702f655669bbbd71b7f652b3bc3d3144679eed2999abe8c208158b23c833d45",
+    "single_snr_-10_seed_42": "85112562b24fc09d4e3a740842dcc813d09d32b75b4fae79700fb64f2c3dd51f",
+    "single_snr_-10_seed_43": "46797bc477dbd1d3d9f2b6769355e7ee893a1a06dff783f45cdbfda746481db2",
+    "single_snr_-10_seed_44": "6b8d2573329663c54f1ed4973a6d91b9332f0160b05db1c904a4066dd3ba1c1d",
+    "single_snr_-5_seed_42": "7af11601d5f4c89c59d1af888885de7a18ef24db1de9d13e8676b7f7ed1efa3f",
+    "single_snr_-5_seed_43": "21bd747de22a02f47e6c6a372c815998de4a8cacd7f2a4f971bd3c097e910261",
+    "single_snr_-5_seed_44": "61e69b2b5ac4e2c104698e77ed5fae808a69ee9bc275e07f07af2bc10cb51c9f",
+    "single_snr_0_seed_42": "64d369de481c083900a5e7d077c33c8a8333034310d794f5641bf3d3cfecac37",
+    "single_snr_0_seed_43": "78856b96d9295760121c73f7452dd9ecbf7006988f470fae91cb768c5613c6be",
+    "single_snr_0_seed_44": "69d67c6719c2a6dff177e9caa2c912248388b4a2c99e38e9eafe2bbd9c8304db",
+    "multiline_snr_-20_seed_42": "b6c69530bf4ad5e79607e8dceec676e4c249b2c473e2fd57ccc1e1c4764802b5",
+    "multiline_snr_-20_seed_43": "d2c510bcc990bf529ba6c20b1366e8f1aec0ac555fc1cb1f49a0b6a8a3a732cf",
+    "multiline_snr_-20_seed_44": "dcb53cb1453315337d45bf5cbc6ba5a49bb15d82851f7500e3db08d35262c41d",
+    "multiline_snr_-15_seed_42": "cec31e3105bce0766b9d94fefe2a515b6465ef276715b45be8e19fd963be6283",
+    "multiline_snr_-15_seed_43": "2aa6ae5d9c00dfbc54e885074944493c9589569fdf69e27e5fa2438b4d033b50",
+    "multiline_snr_-15_seed_44": "620d320a5a36255ed21eb872a23450578059099797f4ea048cc35a7c31f6844d",
+    "multiline_snr_-10_seed_42": "372bb60d56007f91025078887d5585eface968fed2d5f7492af4c2823884ae0f",
+    "multiline_snr_-10_seed_43": "cb244d39f52cf5bb39f66ddf14323aaa1fd2ad58cebedb0fe6408e82d7d1f928",
+    "multiline_snr_-10_seed_44": "c9020e6c617631ac6ca71ea3e3eb2b6c67930f17d88c7e7e44cd4376ef659554",
+    "multiline_snr_-5_seed_42": "1de02b9618fb1d574a3fcde380933caba6ed6cf737b13bd6d198b18edb3ee348",
+    "multiline_snr_-5_seed_43": "35b75933028c92590b12c501d888fc085fd345bdb4184be99b58a7a593e0bf08",
+    "multiline_snr_-5_seed_44": "d9df751e71429d8a34295eaa6e6e52875553e2e326e3a5c8c5a004221e57d9aa",
+    "multiline_snr_0_seed_42": "51e3a5a05c251294b9a2bae18da2b41f6fba80c59c4fcbb49dc00396dd104731",
+    "multiline_snr_0_seed_43": "3467273e3bd179d6a74ffbed22bc5b74720c6ee13d30ae60b5720066bc2a5f57",
+    "multiline_snr_0_seed_44": "d2538bfc8704ad87c9da1cc2c0bbb87dd0d52a9d3d59a8f08069c47fe2358bea"
+  },
+  "protocol_hash": "d10e020cc9a0d40778ea9bf419fdee6b6897caa0ac2080a646c5d0ee9d19ad2a"
+}

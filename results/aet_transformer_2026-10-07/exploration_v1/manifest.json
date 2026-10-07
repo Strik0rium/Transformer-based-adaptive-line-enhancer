@@ -1,0 +1,22 @@
+{
+  "source_sha256": "06db9c04a109a10e1b88c82ef2644e774cd3d59bcb886ebf3198d5188ea36c87",
+  "variants": [
+    "lag32_h1",
+    "lag32_h4",
+    "lag16_h1",
+    "lag64_h1"
+  ],
+  "snrs": [
+    -20,
+    0
+  ],
+  "seeds": [
+    42
+  ],
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "updates": 400,
+  "role": "development data; not a locked test"
+}

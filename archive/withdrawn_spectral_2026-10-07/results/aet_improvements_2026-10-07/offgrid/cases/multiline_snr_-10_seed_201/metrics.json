@@ -1,0 +1,142 @@
+{
+  "protocol_hash": "b36bea62ffd74ab6a4f4458d6bacaccbfb205f340c27ac35dbd3b5b438118cac",
+  "metrics": [
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "model_seed": 1201,
+      "algorithm": "ALE",
+      "output_snr_db": 0.6319471039883483,
+      "mse": 0.08562690433383599,
+      "input_snr_db": -9.957927993218311,
+      "strongest_tone_retention": 0.5374862075553465,
+      "weakest_tone_retention": 0.019689639059640655,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "model_seed": 1201,
+      "algorithm": "AE",
+      "output_snr_db": 3.8361253319582094,
+      "mse": 0.040944202878467256,
+      "input_snr_db": -9.957927993218311,
+      "strongest_tone_retention": 0.977797551227213,
+      "weakest_tone_retention": 0.038422172258166694,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "model_seed": 1201,
+      "algorithm": "AET",
+      "output_snr_db": 0.09793060139539098,
+      "mse": 0.09683043737581706,
+      "input_snr_db": -9.957927993218311,
+      "strongest_tone_retention": 0.9291520736741353,
+      "weakest_tone_retention": 0.20282250484497885,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "model_seed": 1201,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 21.83616911720079,
+      "mse": 0.0006489153417797124,
+      "input_snr_db": -9.957927993218311,
+      "strongest_tone_retention": 0.9730669888250189,
+      "weakest_tone_retention": 0.8646913673101219,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "model_seed": 1201,
+      "algorithm": "spectral_only",
+      "output_snr_db": 22.560776343178016,
+      "mse": 0.0005491959417134309,
+      "input_snr_db": -9.957927993218311,
+      "strongest_tone_retention": 0.9750848674943586,
+      "weakest_tone_retention": 0.9011329587561231,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 3.8361253319582094,
+      "output_snr_db": 21.83616911720079,
+      "snr_difference_db": 18.000043785242582,
+      "required_db_improvement": 0.38361253319582095,
+      "relative_db_improvement_percent": 469.22460106521555,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 98.41512278623213
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -10,
+      "noise_seed": 201,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 3.8361253319582094,
+      "output_snr_db": 22.560776343178016,
+      "snr_difference_db": 18.724651011219805,
+      "required_db_improvement": 0.38361253319582095,
+      "relative_db_improvement_percent": 488.11364048060227,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 98.6586722830004
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        51.179891879407236,
+        105.53243925737306,
+        162.30502369668739
+      ],
+      "amplitudes": [
+        1.127019173604082,
+        0.563407426336372,
+        0.31940347344432146
+      ],
+      "phases_rad": [
+        -1.0715994762183008,
+        2.3991981205008353,
+        0.5215485043382886
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      51.18068975445922,
+      105.53581202989936,
+      162.31390264819538
+    ],
+    "head_noise_floor": 5987.55612616689,
+    "head_threshold": 93835.73972537194,
+    "head_seconds": 0.011298299999907613,
+    "regularized_selection": {}
+  }
+}

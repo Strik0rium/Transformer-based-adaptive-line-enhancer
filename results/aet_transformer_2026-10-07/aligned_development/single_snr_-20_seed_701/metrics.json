@@ -1,0 +1,17 @@
+{
+  "scene": "single",
+  "requested_snr_db": -20,
+  "noise_seed": 701,
+  "model_seed": 2701,
+  "before_snr_db": 5.818443214296341,
+  "output_snr_db": 3.7662172136029746,
+  "input_snr_db": -20.02274140840867,
+  "snr_gain_db": 23.788958622011645,
+  "mse": 0.004223420595093468,
+  "strongest_tone_retention": 0.8534878167472352,
+  "weakest_tone_retention": 0.8534878167472352,
+  "baseline_snr_db": -1.4913206024956542,
+  "margin_db": 5.108405755849064,
+  "selected_update": 10,
+  "stopped_update": 90
+}

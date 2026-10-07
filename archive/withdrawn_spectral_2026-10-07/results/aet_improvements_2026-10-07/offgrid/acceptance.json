@@ -1,0 +1,14 @@
+{
+  "AET_spectral": {
+    "case_count": 30,
+    "passed_cases": 30,
+    "minimum_margin_db": 9.935374048923082,
+    "minimum_relative_db_improvement_percent": 93.50887211356435
+  },
+  "spectral_only": {
+    "case_count": 30,
+    "passed_cases": 30,
+    "minimum_margin_db": 10.007356766488202,
+    "minimum_relative_db_improvement_percent": 93.83453302078024
+  }
+}

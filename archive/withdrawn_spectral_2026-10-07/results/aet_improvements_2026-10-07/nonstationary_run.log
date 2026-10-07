@@ -1,0 +1,4 @@
+Chirp -10 seed 300: {'ALE': 1.371, 'AE': -0.177, 'AET': -1.556, 'AET_spectral': 0.0, 'spectral_only': 0.0}
+Chirp -10 seed 301: {'ALE': 1.46, 'AE': -0.326, 'AET': -2.847, 'AET_spectral': 0.0, 'spectral_only': 0.0}
+Chirp 0 seed 300: {'ALE': 9.804, 'AE': 0.41, 'AET': 2.453, 'AET_spectral': 0.023, 'spectral_only': 0.017}
+Chirp 0 seed 301: {'ALE': 9.991, 'AE': 0.464, 'AET': 3.263, 'AET_spectral': 0.099, 'spectral_only': 0.098}

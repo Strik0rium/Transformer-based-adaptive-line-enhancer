@@ -1,0 +1,22 @@
+{
+  "selected_epoch": 13,
+  "stopped_epoch": 23,
+  "best_validation_mse": 0.013902414875849096,
+  "raw_minimum_validation_epoch": 13,
+  "stop_reason": "patience",
+  "checkpoint_validation_replay_difference": 0.0,
+  "scene": "multiline",
+  "requested_snr_db": -20,
+  "noise_seed": 42,
+  "model_seed": 0,
+  "validation_noise_seeds": [
+    10042,
+    20042,
+    30042
+  ],
+  "validation_noise_sigma": 1.0033085155306967,
+  "training_and_validation_seconds": 2.0085287999991124,
+  "fixed_60_output_snr_db": -4.5476899412821865,
+  "early_stop_output_snr_db": -1.6090890028685367,
+  "improvement_vs_fixed_60_db": 2.93860093841365
+}

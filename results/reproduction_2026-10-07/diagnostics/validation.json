@@ -1,0 +1,6 @@
+{
+  "error_projection_rows": 90,
+  "independent_observation_rows": 48,
+  "epoch_sensitivity_rows": 16,
+  "note": "Epoch and independent-noise probes use only original noise_seed 42/model_seed 0; causal architecture claims require further matched ablations."
+}

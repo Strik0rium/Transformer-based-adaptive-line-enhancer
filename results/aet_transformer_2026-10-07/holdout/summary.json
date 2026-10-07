@@ -1,0 +1,38 @@
+{
+  "AET_LA": {
+    "cases": 100,
+    "passed": 100,
+    "min_margin_db": 2.8231916952039486,
+    "min_relative_db_percent": 24.9319742596382
+  },
+  "AET_frozen_qk": {
+    "cases": 100,
+    "passed": 100,
+    "min_margin_db": 2.488644861524939,
+    "min_relative_db_percent": 27.756446744811004
+  },
+  "AET_no_attention": {
+    "cases": 100,
+    "passed": 0,
+    "min_margin_db": -12.28636447095202,
+    "min_relative_db_percent": -383.9097290648645
+  },
+  "AET_noisy_residual": {
+    "cases": 100,
+    "passed": 33,
+    "min_margin_db": -7.120264138512978,
+    "min_relative_db_percent": -153.4501436090961
+  },
+  "AET_short_attention": {
+    "cases": 100,
+    "passed": 52,
+    "min_margin_db": -3.429534291099845,
+    "min_relative_db_percent": -20.195488286971916
+  },
+  "AET_uniform_attention": {
+    "cases": 100,
+    "passed": 22,
+    "min_margin_db": -20.597127143296944,
+    "min_relative_db_percent": -150.90377727641052
+  }
+}

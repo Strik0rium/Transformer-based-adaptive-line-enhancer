@@ -1,0 +1,17 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpus": 14,
+  "torch_threads": 2,
+  "cuda_available": false,
+  "execution_device": "cpu",
+  "packages": {
+    "numpy": "2.5.2",
+    "torch": "2.13.0",
+    "matplotlib": "3.11.1",
+    "pytest": "9.1.1",
+    "jupyter": "1.1.1",
+    "ipykernel": "7.3.0"
+  }
+}

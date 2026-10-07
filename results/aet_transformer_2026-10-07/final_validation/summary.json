@@ -1,0 +1,66 @@
+{
+  "fixed": {
+    "AET_LA": {
+      "cases": 50,
+      "passed": 50,
+      "min_margin_db": 2.7264334832572525,
+      "min_relative_db_percent": 32.04634040438895
+    },
+    "AET_frozen_qk": {
+      "cases": 50,
+      "passed": 50,
+      "min_margin_db": 2.1083787289617053,
+      "min_relative_db_percent": 26.678863568279418
+    },
+    "AET_no_attention": {
+      "cases": 50,
+      "passed": 0,
+      "min_margin_db": -11.227147562659862,
+      "min_relative_db_percent": -564.2124738653112
+    },
+    "AET_old_queries": {
+      "cases": 50,
+      "passed": 50,
+      "min_margin_db": 3.8024912857885482,
+      "min_relative_db_percent": 38.81611129858367
+    },
+    "AET_short_attention": {
+      "cases": 50,
+      "passed": 16,
+      "min_margin_db": -2.578239560750477,
+      "min_relative_db_percent": -51.58708901722104
+    }
+  },
+  "random": {
+    "AET_LA": {
+      "cases": 50,
+      "passed": 50,
+      "min_margin_db": 2.04319868423086,
+      "min_relative_db_percent": 24.102243071564132
+    },
+    "AET_frozen_qk": {
+      "cases": 50,
+      "passed": 50,
+      "min_margin_db": 0.9255971217954652,
+      "min_relative_db_percent": 23.516230470854257
+    },
+    "AET_no_attention": {
+      "cases": 50,
+      "passed": 0,
+      "min_margin_db": -12.314342518345498,
+      "min_relative_db_percent": -1490.1693951890968
+    },
+    "AET_old_queries": {
+      "cases": 50,
+      "passed": 49,
+      "min_margin_db": -0.4895609408260051,
+      "min_relative_db_percent": -0.038534550755336655
+    },
+    "AET_short_attention": {
+      "cases": 50,
+      "passed": 19,
+      "min_margin_db": -2.9212666328440795,
+      "min_relative_db_percent": -55.26820289284432
+    }
+  }
+}

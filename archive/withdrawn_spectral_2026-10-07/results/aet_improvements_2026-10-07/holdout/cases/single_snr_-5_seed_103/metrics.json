@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "ALE",
+      "output_snr_db": 5.788143470670951,
+      "mse": 0.08128944455677191,
+      "input_snr_db": -5.0172614880966275,
+      "strongest_tone_retention": 0.9034648873227901,
+      "weakest_tone_retention": 0.9034648873227901,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AE",
+      "output_snr_db": 12.130302569631063,
+      "mse": 0.018872013831351942,
+      "input_snr_db": -5.0172614880966275,
+      "strongest_tone_retention": 1.0328825672034538,
+      "weakest_tone_retention": 1.0328825672034538,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET",
+      "output_snr_db": 10.412191367078895,
+      "mse": 0.028030404591920872,
+      "input_snr_db": -5.0172614880966275,
+      "strongest_tone_retention": 1.0105441279645775,
+      "weakest_tone_retention": 1.0105441279645775,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 26.728300697138895,
+      "mse": 0.0006546639603776965,
+      "input_snr_db": -5.0172614880966275,
+      "strongest_tone_retention": 1.0324298406267813,
+      "weakest_tone_retention": 1.0324298406267813,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "spectral_only",
+      "output_snr_db": 26.559376090650197,
+      "mse": 0.0006806296968609459,
+      "input_snr_db": -5.0172614880966275,
+      "strongest_tone_retention": 1.0336100467559255,
+      "weakest_tone_retention": 1.0336100467559255,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 12.130302569631063,
+      "output_snr_db": 26.728300697138895,
+      "snr_difference_db": 14.597998127507832,
+      "required_db_improvement": 1.2130302569631064,
+      "relative_db_improvement_percent": 120.34323170186038,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 96.53103284986942
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -5,
+      "noise_seed": 103,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 12.130302569631063,
+      "output_snr_db": 26.559376090650197,
+      "snr_difference_db": 14.429073521019134,
+      "required_db_improvement": 1.2130302569631064,
+      "relative_db_improvement_percent": 118.95064808311692,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 96.39344426650312
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00100726017072
+    ],
+    "head_noise_floor": 5958.894005536632,
+    "head_threshold": 93386.55290611454,
+    "head_seconds": 0.003751199999896926,
+    "regularized_selection": {}
+  }
+}

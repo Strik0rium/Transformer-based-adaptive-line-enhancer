@@ -1,0 +1,13 @@
+{
+  "cases": 100,
+  "metric_rows": 900,
+  "checkpoint_replays": 500,
+  "maximum_metric_error": 0.0,
+  "maximum_prediction_error": 0.0,
+  "maximum_validation_loss_error": 0.0,
+  "source_hashes_verified": true,
+  "independent_seed_sets_verified": true,
+  "early_stopping_verified": true,
+  "noise_provenance_verified": true,
+  "pytest_passed": 73
+}

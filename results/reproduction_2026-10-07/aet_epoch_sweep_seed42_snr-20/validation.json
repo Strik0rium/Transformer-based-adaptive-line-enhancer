@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "epoch_step": 1,
+  "per_epoch_metrics_recomputed": 240,
+  "reference_epochs_matched": [
+    10,
+    30,
+    60,
+    120
+  ],
+  "best_checkpoint_replay_max_difference": {
+    "single": 0.0,
+    "multiline": 0.0
+  },
+  "waveform_shape_per_scene": [
+    120,
+    16000
+  ],
+  "best_epochs": {
+    "single": 16,
+    "multiline": 5
+  }
+}

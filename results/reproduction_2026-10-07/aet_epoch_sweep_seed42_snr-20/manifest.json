@@ -1,0 +1,39 @@
+{
+  "noise_seed": 42,
+  "model_seed": 0,
+  "requested_snr_db": -20,
+  "max_epochs": 120,
+  "epoch_step": 1,
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "config": {
+    "frame_length": 320,
+    "frame_hop": 64,
+    "prediction_delay": 1000,
+    "sequence_length": 8,
+    "sequence_stride": 1,
+    "embedding_dim": 64,
+    "attention_heads": 8,
+    "transformer_layers": 2,
+    "feedforward_dim": 128,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "batch_size": 16,
+    "epochs": 120,
+    "seed": 0
+  },
+  "source_sha256": "5fd683dc89b9778ee722367f025d714bddabdbf5827ba3c0eb4e7a037d34a4ee",
+  "script_sha256": "2c6cc0acad064c871fcd7e82c8be19169e715e78ec12120b75d3edbd4818d633",
+  "data_sha256": {
+    "single": "dfa18727d43f1178a2a67c3ff6b417ebdff2526e5c2272515d16a05b4a006c6d",
+    "multiline": "b6c69530bf4ad5e79607e8dceec676e4c249b2c473e2fd57ccc1e1c4764802b5"
+  },
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.13.0",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  }
+}

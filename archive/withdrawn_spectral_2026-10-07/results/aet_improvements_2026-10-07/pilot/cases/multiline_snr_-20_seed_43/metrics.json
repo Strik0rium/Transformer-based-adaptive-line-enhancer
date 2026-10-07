@@ -1,0 +1,185 @@
+{
+  "protocol_hash": "a8dab06166f365e411b57d119a2df36491a12877dd358e2dc5695e379bfdc414",
+  "metrics": [
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "ALE",
+      "output_snr_db": -6.049382826192804,
+      "mse": 0.04061377036043727,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.11086512588482561,
+      "weakest_tone_retention": 0.06150382784352515,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AE",
+      "output_snr_db": -3.516631984840961,
+      "mse": 0.022667218173252665,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.023177293501980605,
+      "weakest_tone_retention": 0.03743477624835053,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET",
+      "output_snr_db": -10.290527784353301,
+      "mse": 0.1078419680080319,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.3053129837831252,
+      "weakest_tone_retention": 0.11888186360782005,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET_early_stop",
+      "output_snr_db": -1.8835356007744897,
+      "mse": 0.015562830461097596,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.0029211597467547735,
+      "weakest_tone_retention": 0.0041421174662951326,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 10.375083498098345,
+      "mse": 0.0009251809385752666,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.934719069269274,
+      "weakest_tone_retention": 0.00011722851843175535,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "spectral_only",
+      "output_snr_db": 10.334440667960983,
+      "mse": 0.0009338797523517603,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.9697605069349959,
+      "weakest_tone_retention": 0.00012156563617239197,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "model_seed": 1,
+      "algorithm": "AET_regularized",
+      "output_snr_db": -11.847043319916315,
+      "mse": 0.15432609184864846,
+      "input_snr_db": -20.0314142286698,
+      "strongest_tone_retention": 0.2740953722118756,
+      "weakest_tone_retention": 0.20888562631752644,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AET_early_stop",
+      "baseline_output_snr_db": -1.8835356007744897,
+      "output_snr_db": 10.375083498098345,
+      "snr_difference_db": 12.258619098872835,
+      "required_db_improvement": 0.18835356007744897,
+      "relative_db_improvement_percent": 650.8302308611646,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 94.05518847687803
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "algorithm": "spectral_only",
+      "best_baseline": "AET_early_stop",
+      "baseline_output_snr_db": -1.8835356007744897,
+      "output_snr_db": 10.334440667960983,
+      "snr_difference_db": 12.217976268735473,
+      "required_db_improvement": 0.18835356007744897,
+      "relative_db_improvement_percent": 648.6724362264017,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 93.99929367163526
+    },
+    {
+      "phase": "pilot",
+      "scene": "multiline",
+      "requested_snr_db": -20,
+      "noise_seed": 43,
+      "algorithm": "AET_regularized",
+      "best_baseline": "AET_early_stop",
+      "baseline_output_snr_db": -1.8835356007744897,
+      "output_snr_db": -11.847043319916315,
+      "snr_difference_db": -9.963507719141825,
+      "required_db_improvement": 0.18835356007744897,
+      "relative_db_improvement_percent": -528.9789964705174,
+      "passes_db_10_percent": false,
+      "mse_reduction_percent": -891.6325454705515
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        50.0,
+        100.0,
+        180.0
+      ],
+      "amplitudes": [
+        1.0,
+        0.6,
+        0.3
+      ]
+    },
+    "baseline": "Reused original 60-epoch outputs",
+    "source_sha256": "d2c510bcc990bf529ba6c20b1366e8f1aec0ac555fc1cb1f49a0b6a8a3a732cf",
+    "head_frequencies_hz": [
+      49.996983132488026,
+      100.00533265033638
+    ],
+    "head_noise_floor": 6137.916727966477,
+    "head_threshold": 96192.15994058398,
+    "head_seconds": 0.006284199999754492,
+    "regularized_selection": {
+      "selected_epoch": 40,
+      "stopped_epoch": 60,
+      "best_validation_mse": 1.2356806152488615
+    }
+  }
+}

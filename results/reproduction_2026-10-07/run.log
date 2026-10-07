@@ -1,0 +1,152 @@
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\30611\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+START single_snr_-20_seed_42
+  ALE 0.04s
+  AE train=0.54s inference=0.00s
+  AET train=3.75s inference=0.02s
+DONE single_snr_-20_seed_42 ALE=-5.65dB AE=-2.47dB AET=-5.78dB
+START single_snr_-20_seed_43
+  ALE 0.05s
+  AE train=0.47s inference=0.00s
+  AET train=3.79s inference=0.02s
+DONE single_snr_-20_seed_43 ALE=-5.96dB AE=-2.45dB AET=-10.89dB
+START single_snr_-20_seed_44
+  ALE 0.05s
+  AE train=0.47s inference=0.00s
+  AET train=3.64s inference=0.02s
+DONE single_snr_-20_seed_44 ALE=-5.54dB AE=-2.84dB AET=-7.33dB
+START single_snr_-15_seed_42
+  ALE 0.06s
+  AE train=0.55s inference=0.00s
+  AET train=4.47s inference=0.02s
+DONE single_snr_-15_seed_42 ALE=-1.89dB AE=2.85dB AET=-2.48dB
+START single_snr_-15_seed_43
+  ALE 0.05s
+  AE train=0.53s inference=0.00s
+  AET train=4.10s inference=0.02s
+DONE single_snr_-15_seed_43 ALE=-2.19dB AE=1.86dB AET=-6.33dB
+START single_snr_-15_seed_44
+  ALE 0.05s
+  AE train=0.48s inference=0.00s
+  AET train=3.80s inference=0.02s
+DONE single_snr_-15_seed_44 ALE=-1.88dB AE=1.41dB AET=-3.31dB
+START single_snr_-10_seed_42
+  ALE 0.06s
+  AE train=0.50s inference=0.00s
+  AET train=3.73s inference=0.02s
+DONE single_snr_-10_seed_42 ALE=1.76dB AE=6.95dB AET=2.83dB
+START single_snr_-10_seed_43
+  ALE 0.05s
+  AE train=0.56s inference=0.00s
+  AET train=3.76s inference=0.02s
+DONE single_snr_-10_seed_43 ALE=1.44dB AE=6.53dB AET=-0.58dB
+START single_snr_-10_seed_44
+  ALE 0.05s
+  AE train=0.50s inference=0.00s
+  AET train=3.95s inference=0.02s
+DONE single_snr_-10_seed_44 ALE=1.67dB AE=6.64dB AET=2.33dB
+START single_snr_-5_seed_42
+  ALE 0.06s
+  AE train=0.49s inference=0.00s
+  AET train=3.83s inference=0.02s
+DONE single_snr_-5_seed_42 ALE=5.79dB AE=11.71dB AET=8.25dB
+START single_snr_-5_seed_43
+  ALE 0.05s
+  AE train=0.51s inference=0.00s
+  AET train=3.79s inference=0.02s
+DONE single_snr_-5_seed_43 ALE=5.45dB AE=11.35dB AET=7.82dB
+START single_snr_-5_seed_44
+  ALE 0.06s
+  AE train=0.51s inference=0.00s
+  AET train=3.66s inference=0.02s
+DONE single_snr_-5_seed_44 ALE=5.62dB AE=11.11dB AET=8.58dB
+START single_snr_0_seed_42
+  ALE 0.05s
+  AE train=0.49s inference=0.00s
+  AET train=3.69s inference=0.02s
+DONE single_snr_0_seed_42 ALE=10.28dB AE=16.28dB AET=15.22dB
+START single_snr_0_seed_43
+  ALE 0.05s
+  AE train=0.49s inference=0.00s
+  AET train=3.71s inference=0.02s
+DONE single_snr_0_seed_43 ALE=9.92dB AE=16.44dB AET=14.35dB
+START single_snr_0_seed_44
+  ALE 0.06s
+  AE train=0.52s inference=0.00s
+  AET train=3.78s inference=0.02s
+DONE single_snr_0_seed_44 ALE=10.04dB AE=16.05dB AET=13.75dB
+START multiline_snr_-20_seed_42
+  ALE 0.05s
+  AE train=0.50s inference=0.00s
+  AET train=3.65s inference=0.02s
+DONE multiline_snr_-20_seed_42 ALE=-5.69dB AE=-2.32dB AET=-4.55dB
+START multiline_snr_-20_seed_43
+  ALE 0.05s
+  AE train=0.49s inference=0.00s
+  AET train=3.62s inference=0.02s
+DONE multiline_snr_-20_seed_43 ALE=-6.05dB AE=-3.52dB AET=-10.29dB
+START multiline_snr_-20_seed_44
+  ALE 0.05s
+  AE train=0.48s inference=0.00s
+  AET train=3.81s inference=0.02s
+DONE multiline_snr_-20_seed_44 ALE=-5.49dB AE=-3.45dB AET=-7.34dB
+START multiline_snr_-15_seed_42
+  ALE 0.05s
+  AE train=0.47s inference=0.00s
+  AET train=3.69s inference=0.02s
+DONE multiline_snr_-15_seed_42 ALE=-2.26dB AE=0.46dB AET=-0.86dB
+START multiline_snr_-15_seed_43
+  ALE 0.05s
+  AE train=0.49s inference=0.00s
+  AET train=3.69s inference=0.02s
+DONE multiline_snr_-15_seed_43 ALE=-2.52dB AE=0.07dB AET=-5.66dB
+START multiline_snr_-15_seed_44
+  ALE 0.05s
+  AE train=0.48s inference=0.00s
+  AET train=3.60s inference=0.02s
+DONE multiline_snr_-15_seed_44 ALE=-2.03dB AE=0.90dB AET=-2.98dB
+START multiline_snr_-10_seed_42
+  ALE 0.05s
+  AE train=0.47s inference=0.00s
+  AET train=3.66s inference=0.01s
+DONE multiline_snr_-10_seed_42 ALE=0.75dB AE=5.54dB AET=1.37dB
+START multiline_snr_-10_seed_43
+  ALE 0.05s
+  AE train=0.49s inference=0.00s
+  AET train=3.68s inference=0.02s
+DONE multiline_snr_-10_seed_43 ALE=0.57dB AE=5.33dB AET=-0.91dB
+START multiline_snr_-10_seed_44
+  ALE 0.05s
+  AE train=0.52s inference=0.00s
+  AET train=3.66s inference=0.02s
+DONE multiline_snr_-10_seed_44 ALE=0.91dB AE=4.64dB AET=0.16dB
+START multiline_snr_-5_seed_42
+  ALE 0.05s
+  AE train=0.47s inference=0.00s
+  AET train=3.66s inference=0.02s
+DONE multiline_snr_-5_seed_42 ALE=4.01dB AE=8.76dB AET=7.29dB
+START multiline_snr_-5_seed_43
+  ALE 0.05s
+  AE train=0.50s inference=0.00s
+  AET train=3.67s inference=0.02s
+DONE multiline_snr_-5_seed_43 ALE=3.87dB AE=8.60dB AET=5.25dB
+START multiline_snr_-5_seed_44
+  ALE 0.05s
+  AE train=0.51s inference=0.00s
+  AET train=3.66s inference=0.02s
+DONE multiline_snr_-5_seed_44 ALE=3.97dB AE=8.58dB AET=6.72dB
+START multiline_snr_0_seed_42
+  ALE 0.05s
+  AE train=0.46s inference=0.00s
+  AET train=3.71s inference=0.02s
+DONE multiline_snr_0_seed_42 ALE=7.80dB AE=10.76dB AET=13.01dB
+START multiline_snr_0_seed_43
+  ALE 0.06s
+  AE train=0.53s inference=0.00s
+  AET train=3.80s inference=0.02s
+DONE multiline_snr_0_seed_43 ALE=7.68dB AE=10.71dB AET=11.32dB
+START multiline_snr_0_seed_44
+  ALE 0.05s
+  AE train=0.50s inference=0.00s
+  AET train=3.66s inference=0.02s
+DONE multiline_snr_0_seed_44 ALE=7.59dB AE=10.72dB AET=12.23dB
+COMPLETE 90 metric rows; 180 tone rows; C:\Users\30611\Desktop\has_work\Transformer-based-adaptive-line-enhancer\results\reproduction_2026-10-07

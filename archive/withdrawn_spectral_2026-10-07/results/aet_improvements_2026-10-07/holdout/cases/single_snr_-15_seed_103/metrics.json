@@ -1,0 +1,131 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "ALE",
+      "output_snr_db": -2.2547120520609782,
+      "mse": 0.05179880114379096,
+      "input_snr_db": -15.017261488096628,
+      "strongest_tone_retention": 0.4176884928703525,
+      "weakest_tone_retention": 0.4176884928703525,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AE",
+      "output_snr_db": 3.3941871345673995,
+      "mse": 0.014106841594336022,
+      "input_snr_db": -15.017261488096628,
+      "strongest_tone_retention": 0.95792181768362,
+      "weakest_tone_retention": 0.95792181768362,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET",
+      "output_snr_db": -4.050659523359465,
+      "mse": 0.07832753430420347,
+      "input_snr_db": -15.017261488096628,
+      "strongest_tone_retention": 1.1095586641963442,
+      "weakest_tone_retention": 1.1095586641963442,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 16.743632267344783,
+      "mse": 0.0006523569241987347,
+      "input_snr_db": -15.017261488096628,
+      "strongest_tone_retention": 1.1007611539514843,
+      "weakest_tone_retention": 1.1007611539514843,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "model_seed": 1103,
+      "algorithm": "spectral_only",
+      "output_snr_db": 16.73330744428982,
+      "mse": 0.0006539096684357985,
+      "input_snr_db": -15.017261488096628,
+      "strongest_tone_retention": 1.100809852231585,
+      "weakest_tone_retention": 1.100809852231585,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 3.3941871345673995,
+      "output_snr_db": 16.743632267344783,
+      "snr_difference_db": 13.349445132777383,
+      "required_db_improvement": 0.33941871345673996,
+      "relative_db_improvement_percent": 393.30315635289253,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 95.37559899686786
+    },
+    {
+      "phase": "holdout",
+      "scene": "single",
+      "requested_snr_db": -15,
+      "noise_seed": 103,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 3.3941871345673995,
+      "output_snr_db": 16.73330744428982,
+      "snr_difference_db": 13.339120309722421,
+      "required_db_improvement": 0.33941871345673996,
+      "relative_db_improvement_percent": 392.99896502089996,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 95.3645919672172
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        100.0
+      ],
+      "amplitudes": [
+        1.0
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      100.00300295481576
+    ],
+    "head_noise_floor": 5958.4773999440995,
+    "head_threshold": 93380.02394953772,
+    "head_seconds": 0.004223899999487912,
+    "regularized_selection": {}
+  }
+}

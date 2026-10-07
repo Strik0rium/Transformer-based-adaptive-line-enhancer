@@ -1,0 +1,142 @@
+{
+  "protocol_hash": "b36bea62ffd74ab6a4f4458d6bacaccbfb205f340c27ac35dbd3b5b438118cac",
+  "metrics": [
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "model_seed": 1202,
+      "algorithm": "ALE",
+      "output_snr_db": -2.1174777818675476,
+      "mse": 0.052447556402067254,
+      "input_snr_db": -14.976517963774707,
+      "strongest_tone_retention": 0.22468374391609805,
+      "weakest_tone_retention": 0.04979408422251618,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "model_seed": 1202,
+      "algorithm": "AE",
+      "output_snr_db": 0.05453847820673181,
+      "mse": 0.03180706765664519,
+      "input_snr_db": -14.976517963774707,
+      "strongest_tone_retention": 0.46623192387471807,
+      "weakest_tone_retention": 0.046666858107026254,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "model_seed": 1202,
+      "algorithm": "AET",
+      "output_snr_db": -3.931729480134672,
+      "mse": 0.07964351674150712,
+      "input_snr_db": -14.976517963774707,
+      "strongest_tone_retention": 0.8083662136647458,
+      "weakest_tone_retention": 0.3143766420900542,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "model_seed": 1202,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 15.452721600052532,
+      "mse": 0.0009177096965124116,
+      "input_snr_db": -14.976517963774707,
+      "strongest_tone_retention": 0.9297138930126904,
+      "weakest_tone_retention": 1.0894109050305214,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "model_seed": 1202,
+      "algorithm": "spectral_only",
+      "output_snr_db": 15.026947311206445,
+      "mse": 0.0010122382620243967,
+      "input_snr_db": -14.976517963774707,
+      "strongest_tone_retention": 0.9358993401486659,
+      "weakest_tone_retention": 1.1316190052024657,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 0.05453847820673181,
+      "output_snr_db": 15.452721600052532,
+      "snr_difference_db": 15.3981831218458,
+      "required_db_improvement": 0.005453847820673181,
+      "relative_db_improvement_percent": 28233.613456315998,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 97.11476170510586
+    },
+    {
+      "phase": "offgrid",
+      "scene": "multiline",
+      "requested_snr_db": -15,
+      "noise_seed": 202,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 0.05453847820673181,
+      "output_snr_db": 15.026947311206445,
+      "snr_difference_db": 14.972408832999713,
+      "required_db_improvement": 0.005453847820673181,
+      "relative_db_improvement_percent": 27452.92741070952,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 96.81756811740262
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        51.75462618948192,
+        112.44844154259262,
+        171.20479285166016
+      ],
+      "amplitudes": [
+        0.8820084807708456,
+        0.489324046798829,
+        0.3194574582067459
+      ],
+      "phases_rad": [
+        -1.4919093488037454,
+        1.3622411304613662,
+        1.4125947383417223
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      51.75788840314392,
+      112.45312885879676,
+      171.19840973076344
+    ],
+    "head_noise_floor": 6387.956555817807,
+    "head_threshold": 100110.73234522456,
+    "head_seconds": 0.01111399999990681,
+    "regularized_selection": {}
+  }
+}

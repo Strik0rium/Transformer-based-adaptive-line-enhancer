@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "case_count": 30,
+  "metrics_recomputed": 90,
+  "tone_metric_rows": 180,
+  "summary_rows": 30,
+  "png_count": 9,
+  "source_hashes_verified": true,
+  "checkpoint_replay": {
+    "AE": {
+      "maximum_absolute_difference": 0.0,
+      "passed": true
+    },
+    "AET": {
+      "maximum_absolute_difference": 0.0,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "single": {
+    "best": {
+      "scene": "single",
+      "noise_seed": 42,
+      "model_seed": 0,
+      "requested_snr_db": -20,
+      "epoch": 16,
+      "training_loss": 0.013670261502432984,
+      "input_snr_db": -20.028069862075487,
+      "output_snr_db": -1.5409454578676771,
+      "snr_gain_db": 18.48712440420781,
+      "mse": 0.01435163175664816,
+      "output_power_over_clean": 0.42514838202152166,
+      "tone_error_over_clean": 1.0007725875458466,
+      "dc_error_over_clean": 0.008805736522007954,
+      "other_error_over_clean": 0.4163396576916513,
+      "noise_error_correlation": 0.07936180245252121,
+      "strongest_tone_retention": 0.001716205157889532,
+      "weakest_tone_retention": 0.001716205157889532,
+      "gain_change_from_previous_epoch_db": 0.04608072920376216,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    "reference_epochs_matched": [
+      10,
+      30,
+      60,
+      120
+    ],
+    "best_checkpoint_replay_max_difference": 0.0,
+    "zero_output_snr_db": 0.0,
+    "zero_output_gain_db": 20.028069862075487,
+    "near_best_epochs_within_0_1_db": [
+      4,
+      5,
+      10,
+      13,
+      14,
+      15,
+      16,
+      22,
+      25,
+      26,
+      31,
+      33,
+      34,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "best_is_range_boundary": false,
+    "training_sequences": 223,
+    "updates_per_epoch": 14
+  },
+  "multiline": {
+    "best": {
+      "scene": "multiline",
+      "noise_seed": 42,
+      "model_seed": 0,
+      "requested_snr_db": -20,
+      "epoch": 5,
+      "training_loss": 0.014032063600628098,
+      "input_snr_db": -20.030217167527397,
+      "output_snr_db": -1.4780300021675719,
+      "snr_gain_db": 18.552187165359825,
+      "mse": 0.014138228823446886,
+      "output_power_over_clean": 0.4036842054470744,
+      "tone_error_over_clean": 1.0017286033363728,
+      "dc_error_over_clean": 0.05113486807836168,
+      "other_error_over_clean": 0.3525464018682657,
+      "noise_error_correlation": 0.07056276889849569,
+      "strongest_tone_retention": 0.00039360848436138926,
+      "weakest_tone_retention": 0.0021743051265926488,
+      "gain_change_from_previous_epoch_db": 0.10823541464165487,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    "reference_epochs_matched": [
+      10,
+      30,
+      60,
+      120
+    ],
+    "best_checkpoint_replay_max_difference": 0.0,
+    "zero_output_snr_db": 0.0,
+    "zero_output_gain_db": 20.030217167527397,
+    "near_best_epochs_within_0_1_db": [
+      5,
+      6,
+      9
+    ],
+    "best_is_range_boundary": false,
+    "training_sequences": 223,
+    "updates_per_epoch": 14
+  }
+}

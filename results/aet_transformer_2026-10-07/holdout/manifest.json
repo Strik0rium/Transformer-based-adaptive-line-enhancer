@@ -1,0 +1,72 @@
+{
+  "phase": "holdout",
+  "noise_seeds": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409
+  ],
+  "model_seed_offset": 2000,
+  "snrs": [
+    -20,
+    -15,
+    -10,
+    -5,
+    0
+  ],
+  "scenes": [
+    "single",
+    "multiline"
+  ],
+  "ablations": true,
+  "attention_config": {
+    "patch_length": 8,
+    "prediction_delay": 1000,
+    "heads": 1,
+    "top_k": 512,
+    "temperature": 0.05,
+    "learning_rate": 0.002,
+    "weight_decay": 0.01,
+    "updates": 400,
+    "validate_every": 5,
+    "patience": 80,
+    "seed": 0,
+    "attention": "lag",
+    "ffn": true,
+    "max_lag_tokens": null,
+    "noisy_residual": false
+  },
+  "baseline_epochs": 60,
+  "early_stopping": {
+    "max_epochs": 120,
+    "patience": 10,
+    "relative_delta": 0.0001
+  },
+  "evaluation_interval": [
+    8000,
+    14976
+  ],
+  "criterion": "output difference >= 0.1*abs(best baseline dB) and > 0",
+  "source_hashes": {
+    "src/transformer_based_adaptive_line_enhancer/aet_attention.py": "0b76257ab9474f34848fd163a306c46bbfadc6904ffd24fcf7deea2a88dda9ab",
+    "src/transformer_based_adaptive_line_enhancer/aet_dle.py": "5fd683dc89b9778ee722367f025d714bddabdbf5827ba3c0eb4e7a037d34a4ee",
+    "src/transformer_based_adaptive_line_enhancer/ae_dle.py": "b332cd70bf5b5cd83152a29227dfab688869e59f47f88fb8b6ea9da091869745",
+    "src/transformer_based_adaptive_line_enhancer/ale.py": "d374c81badb24ec31f0d57df4173a6e885aaac241190086dfe6e43e92e9c1e7b",
+    "src/transformer_based_adaptive_line_enhancer/signals.py": "ea58c89f13c44316b12d6c08714c2708967f89993904936ad058858729c4537e",
+    "src/transformer_based_adaptive_line_enhancer/visualization.py": "bb46ea5f5faff912cfb2adae4fc23dfa0ddd084d795998449213fa03ed899aba",
+    "src/transformer_based_adaptive_line_enhancer/__init__.py": "2537f93670e839cd85554d9dbf4e62b261eef2486e4496e81fe2d1592e7f3b9b",
+    "scripts/evaluate_aet_attention.py": "a70d2024a9d27d6dfc78595fa77a12b3d502e1761bc678fa14c9c369965199eb",
+    "scripts/compare_aet_early_stopping.py": "a0639fbbcc53049a591102e1e831f253fdc3a73519f07b2cd55b898f597e5169"
+  },
+  "selection": "Architecture fixed before this evaluation; no clean labels in training or early stopping",
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.2",
+  "protocol_hash": "17d039e5cafe9538c9bf18ad614f3cabea3e38265b6181b96607e9be5f08ff67",
+  "locked_at_utc": "2026-10-07T04:53:24.890472+00:00"
+}

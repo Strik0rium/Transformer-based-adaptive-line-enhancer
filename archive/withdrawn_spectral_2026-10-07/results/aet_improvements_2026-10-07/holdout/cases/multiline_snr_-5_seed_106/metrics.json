@@ -1,0 +1,137 @@
+{
+  "protocol_hash": "0d182d021cde40eab84a66e0fcf422ff445ac52001e57fa9a6ec104e7f08221d",
+  "metrics": [
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "model_seed": 1106,
+      "algorithm": "ALE",
+      "output_snr_db": 3.8558622167597982,
+      "mse": 0.13023342873911173,
+      "input_snr_db": -4.999759133257982,
+      "strongest_tone_retention": 0.8022662262623164,
+      "weakest_tone_retention": 0.3802914805975859,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "model_seed": 1106,
+      "algorithm": "AE",
+      "output_snr_db": 8.58872352444583,
+      "mse": 0.04379619128069921,
+      "input_snr_db": -4.999759133257982,
+      "strongest_tone_retention": 0.9952924814992871,
+      "weakest_tone_retention": 0.029172189753737338,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "model_seed": 1106,
+      "algorithm": "AET",
+      "output_snr_db": 6.839580572258223,
+      "mse": 0.06551649252767801,
+      "input_snr_db": -4.999759133257982,
+      "strongest_tone_retention": 0.9859318767635226,
+      "weakest_tone_retention": 0.5775611823146996,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "model_seed": 1106,
+      "algorithm": "AET_spectral",
+      "output_snr_db": 31.270839499228366,
+      "mse": 0.0002361700091452568,
+      "input_snr_db": -4.999759133257982,
+      "strongest_tone_retention": 0.9943627653768667,
+      "weakest_tone_retention": 1.0765068334423065,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    },
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "model_seed": 1106,
+      "algorithm": "spectral_only",
+      "output_snr_db": 29.786609412717567,
+      "mse": 0.00033238985118792157,
+      "input_snr_db": -4.999759133257982,
+      "strongest_tone_retention": 0.995247978109484,
+      "weakest_tone_retention": 1.103075525852871,
+      "evaluation_start": 8000,
+      "evaluation_end": 14976
+    }
+  ],
+  "comparisons": [
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "algorithm": "AET_spectral",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 8.58872352444583,
+      "output_snr_db": 31.270839499228366,
+      "snr_difference_db": 22.682115974782533,
+      "required_db_improvement": 0.8588723524445832,
+      "relative_db_improvement_percent": 264.09181655717634,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.46075217447199
+    },
+    {
+      "phase": "holdout",
+      "scene": "multiline",
+      "requested_snr_db": -5,
+      "noise_seed": 106,
+      "algorithm": "spectral_only",
+      "best_baseline": "AE",
+      "baseline_output_snr_db": 8.58872352444583,
+      "output_snr_db": 29.786609412717567,
+      "snr_difference_db": 21.197885888271735,
+      "required_db_improvement": 0.8588723524445832,
+      "relative_db_improvement_percent": 246.8106678243492,
+      "passes_db_10_percent": true,
+      "mse_reduction_percent": 99.24105306541941
+    }
+  ],
+  "metadata": {
+    "scene_config": {
+      "frequencies_hz": [
+        50.0,
+        100.0,
+        180.0
+      ],
+      "amplitudes": [
+        1.0,
+        0.6,
+        0.3
+      ]
+    },
+    "baseline": "Fresh original 60-epoch AE/AET, same observation",
+    "original_aet_valid_end": 14976,
+    "head_frequencies_hz": [
+      49.99945308439123,
+      99.99932997902826,
+      179.99893353624987
+    ],
+    "head_noise_floor": 5981.55041509465,
+    "head_threshold": 93741.61946509118,
+    "head_seconds": 0.007838599999558937,
+    "regularized_selection": {}
+  }
+}

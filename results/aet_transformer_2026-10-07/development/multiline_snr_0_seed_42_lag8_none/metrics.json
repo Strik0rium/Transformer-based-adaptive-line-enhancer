@@ -1,0 +1,43 @@
+{
+  "source_sha256": "42102b60fc2323198fddb18abc270c3f815766ea57daa36874a814f39526f53b",
+  "config": {
+    "patch_length": 8,
+    "prediction_delay": 1000,
+    "heads": 1,
+    "top_k": 64,
+    "temperature": 0.05,
+    "learning_rate": 0.002,
+    "weight_decay": 0.01,
+    "updates": 400,
+    "validate_every": 5,
+    "patience": 80,
+    "seed": 0,
+    "attention": "none",
+    "ffn": true,
+    "max_lag_tokens": null,
+    "noisy_residual": false
+  },
+  "metrics": {
+    "scene": "multiline",
+    "requested_snr_db": 0,
+    "seed": 42,
+    "variant": "lag8_none",
+    "selected_update": 400,
+    "stopped_update": 400,
+    "best_baseline_snr_db": 13.011715951340385,
+    "input_snr_db": -0.030217167527394985,
+    "output_snr_db": 6.4269274291334675,
+    "snr_gain_db": 6.4571445966608625,
+    "mse": 0.22903363360183032,
+    "output_power_over_clean": 0.796575078472433,
+    "tone_error_over_clean": 0.06213429634580037,
+    "dc_error_over_clean": 0.00023585176950206878,
+    "other_error_over_clean": 0.16530061177795685,
+    "noise_error_correlation": 0.005787781238549601,
+    "strongest_tone_retention": 0.8077969653846024,
+    "weakest_tone_retention": 0.30694342836678756,
+    "margin_db": -7.8859601173409555,
+    "seconds": 0.667290100000173,
+    "parameters": 681
+  }
+}
